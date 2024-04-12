@@ -113,3 +113,9 @@ a {
   color: #BD5D38; }
   a:hover, a:focus, a:active {
     color: #824027; }
+/* Ensure profile picture is displayed on all screen sizes */
+#profile-img {
+  display: block; /* Ensure the image is displayed as a block element */
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+}
