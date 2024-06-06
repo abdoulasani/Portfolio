@@ -837,6 +837,77 @@
           </div>
         </section>
     </div>
+<link rel="stylesheet" href="styles.css">
+/* styles.css */
+.goog-te-banner-frame.skiptranslate,
+body .goog-te-gadget-icon {
+    display: none !important;
+}
+
+.goog-te-gadget-simple {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.goog-te-gadget-simple a.goog-te-menu-value span {
+    color: #333;
+    text-decoration: none;
+}
+
+.goog-te-gadget-simple a.goog-te-menu-value:hover {
+    text-decoration: underline;
+}
+
+.goog-te-menu-value span {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent;
+}
+
+.goog-te-menu-value span:first-child {
+    display: block !important;
+    color: #333;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <div id="google_translate_element"></div>
+  </header>
+  <main>
+    <p>This is a sample paragraph of the website content.</p>
+  </main>
+  <footer>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -848,16 +919,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 <script src="script.js"></script>
-      <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {pageLanguage: 'en'},
-                'google_translate_element'
-            );
-        } 
-  </script>
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+      
   </body>
 
 </html>
