@@ -37,22 +37,35 @@
     }
   }
 
-  /* Apply fade-in animation to images */
-  .event-img {
-    width: 25%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 10px;
-    opacity: 0; /* Initial opacity set to 0 */
-    animation: fadeIn 1s ease-out forwards; /* Apply animation with forwards fill-mode */
-  }
+      /* Apply fade-in animation to images */
+      .event-img {
+      width: 100%; /* Default width for smaller screens */
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px; /* Added margin for spacing */
+      opacity: 0; /* Initial opacity set to 0 */
+      animation: fadeIn 1s ease-out forwards; /* Apply animation with forwards fill-mode */
+    }
 
-  /* Remove margin from the last image to prevent extra space */
-  .event-img:last-child {
-    margin-right: 0;
-  }
-</style>
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+      .event-img {
+        width: 50%; /* 2 images per row */
+        margin-right: 10px; /* Adjust margin for spacing between images */
+      }
+      .event-img:last-child {
+        margin-right: 0; /* Remove margin from the last image in a row */
+      }
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      .event-img {
+        width: 30%; /* 3 images per row */
+      }
+    }
+  </style>
 </head>
   </head>
   <div id="google_translate_element"></div> 
