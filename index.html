@@ -22,7 +22,38 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
+<!-- Custom CSS for animations and images -->
+<style>
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Apply fade-in animation to images */
+  .event-img {
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    opacity: 0; /* Initial opacity set to 0 */
+    animation: fadeIn 1s ease-out forwards; /* Apply animation with forwards fill-mode */
+  }
+
+  /* Remove margin from the last image to prevent extra space */
+  .event-img:last-child {
+    margin-right: 0;
+  }
+</style>
+</head>
   </head>
   <div id="google_translate_element"></div> 
   <body id="page-top">
@@ -231,7 +262,6 @@
       <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
           
-          <!-- Founder and Researcher -->
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                   <h3 class="mb-0">Community Manager</h3>
@@ -244,8 +274,13 @@
                       <li>Organized and managed community events and initiatives.</li>
                       <li> Monitored and reported on community feedback and sentiment.</li>
                   </ul>
+                  <div class="resume-item d-flex flex-column flex-md-row mb-5 event-images">
+                    <img src="img/event1.jfif" alt="Event 1" class="event-img">
+                    <img src="img/event2.jfif" alt="Event 2" class="event-img">
+                    <img src="img/event3.jfif" alt="Event 3" class="event-img">
+                  </div>
+                </div>
               </div>
-          </div>
            <!-- Experience Item 2 -->
            <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
